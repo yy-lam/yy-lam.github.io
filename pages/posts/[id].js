@@ -1,15 +1,12 @@
 // dynamic routes page
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 import { Heading } from '@chakra-ui/react'
-import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 
 export default function Post({ postData }) {
   // A react component to render this page
-  const router = useRouter()
-  return (
-    <Layout router={router}>
+    return (
+        <div>
       <Head>
         <title>{postData.title}</title>
       </Head>
@@ -18,8 +15,8 @@ export default function Post({ postData }) {
       {postData.data}
       <br />
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-    </Layout>
-  )
+  </div>
+      )
 }
 
 export async function getStaticPaths() {
