@@ -10,7 +10,7 @@ import BioSection from '../components/bio'
 const Page = ({ postsData }) => {
   return (
     <Container>
-      <Box borderRadius="lg" bg="red.300" p={3} mb={6} align="center">
+      <Box borderRadius="lg" bg="pink.300" p={3} mb={6} align="center">
         Hello, I&apos;m a CS grad student/software engineer.
       </Box>
 
@@ -44,12 +44,12 @@ const Page = ({ postsData }) => {
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
-        <BioSection date="2022.05 (expected)" text="Worked as a software developer summer intern at Goldman Sachs" />
+        <BioSection date="2022.05 (expected)" text="Work as a software developer summer intern at Goldman Sachs" />
         <BioSection date="2021.12" text="Joined a SasS Finance startup" />
-        <BioSection date="2021.06" text="Worked as a software engineer summer intern at a research institute" />
-        <BioSection date="2021.02" text="Started MSCS in Tufts University" />
+        <BioSection date="2021.06" text="Worked as a software engineer intern at a research institute" />
+        <BioSection date="2021.02" text="Started Master's in Computer Science at Tufts University" />
         <BioSection date="2020.11" text="Worked as a data science intern at a logistic company" />
-        <BioSection date="2020.08" text="Graduated from CMU (B.S. in Statistics &amp; Machine Learning)" />
+        <BioSection date="2020.08" text="Graduated from CMU with B.S. in Statistics &amp; Machine Learning" />
       </Section>
 
       <Box display={{ md: 'flex' }}>

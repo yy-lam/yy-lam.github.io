@@ -1,6 +1,6 @@
 // dynamic routes page
 import Head from 'next/head'
-import { Heading } from '@chakra-ui/react'
+import { Heading, Text } from '@chakra-ui/react'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 
 export default function Post({ postData }) {
@@ -12,7 +12,7 @@ export default function Post({ postData }) {
       </Head>
       <Heading as="h1">{postData.title}</Heading>
       <br />
-      {postData.data}
+      <Text>Date: {postData.date}</Text>
       <br />
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
   </div>
