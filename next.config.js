@@ -1,7 +1,20 @@
+/*const withPlugins = require('next-compose-plugins')*/
+/*const optimizedImages = require('next-optimized-images')*/
+
+/*module.exports = withPlugins([*/
+/*[*/
+/*optimizedImages,*/
+/*{*/
+/*[> config for next-optimized-images <]*/
+/*optimizedImages: false*/
+/*}*/
+/*]*/
+
+/*// your other plugins here*/
+/*])*/
 module.exports = {
-  reactStrictMode: true
-  /*  images: {*/
-  /*loader: 'imgix',*/
-  /*path: 'https://yy-lam.imgix.net'*/
-  /*}*/
+  images: {
+    loader: 'akamai',
+    path: ''
+  }
 }

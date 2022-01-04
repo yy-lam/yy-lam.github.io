@@ -23,7 +23,6 @@ export default function Logo() {
       <a>
         <LogoBox>
           <Image
-            unoptimized={true}
             src={logo}
             width={40}
             height={40}

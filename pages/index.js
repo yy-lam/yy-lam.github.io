@@ -28,7 +28,6 @@ export default function Page() {
           align="center"
         >
           <Image
-            unoptimized={true}
             src={profilePic}
             alt="my profile"
             width="100%"
