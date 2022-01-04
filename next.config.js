@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    loader: 'static'
+    loader: 'imgix'
   }
 }
