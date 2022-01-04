@@ -16,7 +16,7 @@ const LogoBox = styled.span`
 `
 
 export default function Logo() {
-  const logo = `/images/logo${useColorModeValue('', '-dark')}.png`
+  const logo = `/images/logo.png`
 
   return (
     <Link href="/">

@@ -8,15 +8,14 @@ import styled from '@emotion/styled'
 
 export const BioYear = styled.span`
   font-weight: bold;
-  margin-right: 1em;
+  margin-right: 5%;
+  margin-left: 5%;
 `
 
 export default function BioSection({ date, text }) {
   return (
     <Flex alignItems="start">
-      <Center w="260px">
-          <BioYear>{date}</BioYear>
-      </Center>
+      <BioYear>{date}</BioYear>
       <Box flex="1">
         <Text>{text}</Text>
       </Box>

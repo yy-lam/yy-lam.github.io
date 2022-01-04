@@ -58,7 +58,7 @@ export default function Page() {
           </Heading>
           <BioSection
             date="2022.05 (expected)"
-            text="Work as a software developer summer intern at Goldman Sachs"
+            text="Work as a summer analyst (software developer) at Goldman Sachs"
           />
           <BioSection date="2021.12" text="Joined a SasS Finance startup" />
           <BioSection
