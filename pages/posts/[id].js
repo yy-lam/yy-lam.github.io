@@ -2,11 +2,12 @@
 import Head from 'next/head'
 import { Heading, Text } from '@chakra-ui/react'
 import { getAllPostIds, getPostData } from '../../lib/posts'
+import Transition from '../../components/transition'
 
 export default function Post({ postData }) {
   // A react component to render this page
-    return (
-        <div>
+  return (
+    <Transition>
       <Head>
         <title>{postData.title}</title>
       </Head>
@@ -15,8 +16,8 @@ export default function Post({ postData }) {
       <Text>Date: {postData.date}</Text>
       <br />
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-  </div>
-      )
+    </Transition>
+  )
 }
 
 export async function getStaticPaths() {
