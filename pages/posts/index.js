@@ -10,7 +10,7 @@ export default function Posts({ postsData }) {
         All Posts
       </Heading>
       <Center>
-        <Grid w="68%" templateColumns="repeat(3, 1fr)" gap={6}>
+        <Grid w="68%" templateColumns="repeat(2, 1fr)" gap={6}>
           {postsData.map(({ id, date, title }) => (
             <GridItem key={id}>
               <Link href={'/posts/' + id}>
