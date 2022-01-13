@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
 import VoxelTree from './tree'
+import Footer from './footer'
 
 const NavBar = dynamic(() => import('./navbar'), { ssr: false })
 
@@ -18,6 +19,7 @@ export default function Layout({ children, router }) {
         <VoxelTree />
         {children}
       </Container>
+      <Footer />
     </Box>
   )
 }
