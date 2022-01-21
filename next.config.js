@@ -13,6 +13,7 @@
 /*// your other plugins here*/
 /*])*/
 module.exports = {
+  assetPrefix: './',
   images: {
     loader: 'akamai',
     path: ''

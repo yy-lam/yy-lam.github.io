@@ -75,7 +75,7 @@ export default function VoxelTree() {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/tree-original.glb', {
+      loadGLTFModel(scene, 'tree-original.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
