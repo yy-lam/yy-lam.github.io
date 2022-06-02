@@ -1,7 +1,6 @@
 import { Container, Box, Heading, useColorModeValue } from '@chakra-ui/react'
 import Link from 'next/link'
 import Image from 'next/image'
-import profilePic from '../public/images/profile.jpg'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import BioSection from '../components/bio'
@@ -28,7 +27,7 @@ export default function Page() {
           align="center"
         >
           <Image
-            src={profilePic}
+            src="/images/profile.jpg"
             alt="my profile"
             width="100%"
             height="100%"
@@ -46,9 +45,9 @@ export default function Page() {
           </Heading>
           <Paragraph>
             Yeung is a master student in computer science &amp; a software
-            engineer in Finance. Currently, he is building a quantitative model
-            for a SaaS Finance startup, and he will join Goldman Sachs as a
-            Software Developer intern this summer.
+            engineer. Currently, he is building a quantitative model for a SaaS
+            Fintech startup, and he will join Goldman Sachs as a Software
+            Developer intern this summer.
           </Paragraph>
         </Section>
 
@@ -57,10 +56,10 @@ export default function Page() {
             Bio
           </Heading>
           <BioSection
-            date="2022.06 (expected)"
-            text="Work as a summer analyst (software developer) at Goldman Sachs"
+            date="2022.06"
+            text="Worked as a summer analyst (software developer) at Goldman Sachs"
           />
-          <BioSection date="2021.12" text="Joined a SasS Finance startup" />
+          <BioSection date="2021.12" text="Joined a SasS Fintech startup" />
           <BioSection
             date="2021.06"
             text="Worked as a software engineer intern at a research institute"
