@@ -14,7 +14,7 @@
 /*])*/
 module.exports = {
   //basePath: '/~ylam04',
-  //assetPrefix: '.',
+  assetPrefix: '.',
   images: {
     loader: 'akamai',
     path: ''
