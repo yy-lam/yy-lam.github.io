@@ -13,8 +13,8 @@
 /*// your other plugins here*/
 /*])*/
 module.exports = {
-  basePath: '/~ylam04',
-  assetPrefix: '.',
+  //basePath: '/~ylam04',
+  //assetPrefix: '.',
   images: {
     loader: 'akamai',
     path: ''
