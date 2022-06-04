@@ -59,7 +59,7 @@ export default function Page() {
             date="2022.06"
             text="Worked as a summer analyst (software developer) at Goldman Sachs"
           />
-          <BioSection date="2021.12" text="Joined a SasS Fintech startup" />
+          <BioSection date="2021.12" text="Joined a Fintech SasS startup" />
           <BioSection
             date="2021.06"
             text="Worked as a software engineer intern at a research institute"
