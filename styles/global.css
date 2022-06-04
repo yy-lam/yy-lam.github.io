@@ -18,8 +18,8 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
-  color: blue;
+  text-decoration: none !important;
+  color: teal;
 }
 
 img {
