@@ -46,8 +46,8 @@ export default function Page() {
           <Paragraph>
             Yeung is a master student in computer science &amp; a software
             engineer. Currently, he is building a quantitative model for a SaaS
-            Fintech startup, and he will join Goldman Sachs as a Software
-            Developer intern this summer.
+            Fintech startup, and he will join Uber as a Software Developer after
+            graduation.
           </Paragraph>
         </Section>
 
@@ -55,9 +55,10 @@ export default function Page() {
           <Heading as="h3" variant="section-title">
             Bio
           </Heading>
+          <BioSection date="2023.01" text="Joining Uber Technologies" />
           <BioSection
             date="2022.06"
-            text="Worked as a summer analyst (software developer) at Goldman Sachs"
+            text="Worked as a software developer summer analyst at Goldman Sachs"
           />
           <BioSection date="2021.12" text="Joined a Fintech SasS startup" />
           <BioSection
