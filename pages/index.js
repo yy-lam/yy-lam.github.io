@@ -1,12 +1,13 @@
+import AvatarView from '@sarge/avatar-view'
 import { Container, Box, Heading, useColorModeValue } from '@chakra-ui/react'
 import Link from 'next/link'
-import Image from 'next/image'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import BioSection from '../components/bio'
 import Transition from '../components/transition'
 
 export default function Page() {
+  const avatarBg = useColorModeValue('whiteAlpha.500', 'whiteAlpha.300')
   return (
     <Transition>
       <Container>
@@ -26,13 +27,16 @@ export default function Page() {
           ml={{ md: 6 }}
           align="center"
         >
-          <Image
-            src="/images/profile.jpg"
-            alt="my profile"
-            width="100%"
-            height="100%"
-            className="portfolio"
-            objectFit="cover"
+          <AvatarView
+            style={{
+              width: '200px',
+              height: '200px',
+              backgroundColor: avatarBg,
+              borderRadius: '100%'
+            }}
+            eyeBlink
+            headMovement
+            url={'avatar.glb'}
           />
           <Heading as="h2" variant="page-title">
             Lam, Yuk Yeung
